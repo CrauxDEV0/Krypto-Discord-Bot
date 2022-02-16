@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "axios": "^0.24.0",
+    "chalk": "^4.1.2",
+    "discord-gamecord": "^2.0.0",
+    "discord.js": "^13.3.0",
+    "express": "^4.17.1",
+    "figlet": "^1.5.2",
+    "fs": "^0.0.1-security",
+    "got": "^11.8.2",
+    "install": "^0.13.0",
+    "moment": "^2.29.1",
+    "mongodb": "^4.1.3",
+    "mongoose": "^6.0.12",
+    "ms": "^2.1.3",
+    "node-fetch": "^3.1.0",
+    "parse-ms": "^3.0.0",
+    "pretty-ms": "^7.0.1",
+    "quick.db": "^7.1.3",
+    "reconlx": "^2.5.1",
+    "simply-djs": "^2.2.0",
+    "smartestchatbot": "^2.0.1",
+    "week": "^0.2.0",
+    "weky": "^3.1.8"
+  }
+}
