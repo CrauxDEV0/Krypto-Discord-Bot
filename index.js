@@ -49,7 +49,7 @@ client.login(process.env.TOKEN).then(() => {
     chalk.bgBlueBright.black(
       ` Successfully logged in as: ${client.user.tag} `
     )
-  //see error in console :(
+ 
     
   );
 });
