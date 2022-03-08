@@ -12,7 +12,7 @@ module.exports = {
         embed.addField('Latency', latency, true)
         embed.setThumbnail("https://media.discordapp.net/attachments/747094092596510841/767079159977082910/2102a19ea556e1d1c54f40a3eda0d775.gif")
         embed.setColor('BLACK')
-        embed.setFooter('Made by Craux!')
+        embed.setFooter('@ Ping/Server')
         embed.setTimestamp()
         
         message.channel.send({embeds:[embed]});
