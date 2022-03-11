@@ -1,17 +1,12 @@
-const { MessageEmbed } = require("discord.js");
-const db = require("quick.db");
-const ms = require("parse-ms");
+const { MessageEmbed } = require('discord.js');
+const ms = require('ms');
+const db = require('quick.db');
 
 module.exports = {
-    
-        name: "daily",
-        aliases: ["coins-system"],
-        category: "economy",
-        description: "Gives You 200 per day",
-        usage: " ",
-        accessableby: "everyone"
-    ,
-    run: async (bot, message, args) => {
+    name:'daily',
+    description:'Gain daily free coins',
+    run:async(client, message, args) => {
+        let user = message.author;
         let user = message.author;
 
         let timeout = 86400000;
@@ -23,14 +18,14 @@ module.exports = {
             let time = ms(timeout - (Date.now() - daily));
 
             let timeEmbed = new MessageEmbed()
-                .setColor("GREEN")
-                .setDescription(`❌ You've already collected your daily reward\n\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
-            message.channel.send(timeEmbed)
+                .setColor("BLACK")
+                .setDescription(`<a:Cross:916884830451548180> You've already collected your daily reward\n\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
+            message.channel.send({embeds:[timeEmbed]});
         } else {
             let moneyEmbed = new MessageEmbed()
-                .setColor("GREEN")
-                .setDescription(`✅ You've collected your daily reward of ${amount} coins`);
-            message.channel.send(moneyEmbed)
+                .setColor("BLACK")
+                .setDescription(`<a:Money:927552113389756506> You've collected your daily reward of ${amount} coins`);
+            message.channel.send({embeds:[moneyEmbed]});
             db.add(`money_${user.id}`, amount)
             db.set(`daily_${user.id}`, Date.now())
 
