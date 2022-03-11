@@ -17,12 +17,12 @@ module.exports = {
 
             let timeEmbed = new MessageEmbed()
                 .setColor("BLACK")
-                .setDescription(`<a:Cross:916884830451548180> You've already collected your daily reward!`);
+                .setDescription(`<a:Cross:916884830451548180> You've already collected your **Daily __Crypto Coins__**`);
             message.channel.send({embeds:[timeEmbed]});
         } else {
             let moneyEmbed = new MessageEmbed()
                 .setColor("BLACK")
-                .setDescription(`<a:Money:927552113389756506> You've collected your daily reward of ${amount} coins`);
+                .setDescription(`<a:Money:927552113389756506> You've collected your **Daily __Crypto Coin__** of ${amount} coins`);
             message.channel.send({embeds:[moneyEmbed]});
             db.add(`money_${user.id}`, amount)
             db.set(`daily_${user.id}`, Date.now())
