@@ -10,9 +10,9 @@ module.exports = {
     accessableby: "everyone",
     run: async (client, message, args) => {
     const embed = new MessageEmbed()
-    embed.setDescription(`**<a:Cross:916884830451548180> Enter a valid user**`)
+    embed.setDescription(`<a:Cross:916884830451548180> Enter a valid **user**`)
     embed.setColor('#f50213');
-//coded by craux
+
     let user =
       message.mentions.members.first() ||
       message.guild.members.cache.get(args[0]) ||
@@ -37,8 +37,10 @@ let Total = bal + bank
       let moneyEmbed = new MessageEmbed()
         .setColor("BLACK")
         .setDescription(
-          `**${user.user.username}'s Balance**\n**<:wallet:927550750844940288> Wallet:** ${bal}$\n**<:bank:927550933838217257> Bank:** ${bank}\n**<a:Money:927552113389756506> Total:** ${Total}`
-        );
+          `**${user.user.username}'s Balance**\n**<:wallet:927550750844940288> Wallet:** ${bal}/-\n**<:bank:927550933838217257> Bank:** ${bank}/-\n**<a:Money:927552113389756506> Total:** ${Total}/-`
+        )
+        .setFooter(`<a:Money:927552113389756506>`)
+        .setTimestamp();
       message.channel.send({embeds:[moneyEmbed]});
     } else {
       return message.channel.send({embeds:[embed]});
