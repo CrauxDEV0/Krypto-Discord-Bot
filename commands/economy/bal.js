@@ -12,7 +12,7 @@ module.exports = {
     const embed = new MessageEmbed()
     embed.setDescription(`**<a:Cross:916884830451548180> Enter a valid user**`)
     embed.setColor('#f50213');
-
+//coded by craux
     let user =
       message.mentions.members.first() ||
       message.guild.members.cache.get(args[0]) ||
