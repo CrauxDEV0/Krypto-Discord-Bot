@@ -20,12 +20,12 @@ module.exports = {
 
             let timeEmbed = new MessageEmbed()
                 .setColor("BLACK")
-                .setDescription(`<a:tick:916884945555828806> **You've already begged recently**`);
+                .setDescription(`<a:tick:916884945555828806> You've already **begged** recently`);
             message.channel.send({embeds:[timeEmbed]})
         } else {
             let moneyEmbed = new MessageEmbed()
                 .setColor("BLACK")
-                .setDescription(`**<a:tick:916884945555828806> You've begged and received ${amount} coins**`);
+                .setDescription(`<a:tick:916884945555828806> You've **begged** and received ${amount} coins`);
             message.channel.send({embeds:[moneyEmbed]})
             db.add(`money_${user.id}`, amount)
             db.add(`begs_${user.id}`, 1)
