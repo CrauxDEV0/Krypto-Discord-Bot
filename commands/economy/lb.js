@@ -24,7 +24,7 @@ module.exports = {
         };
 
         const embed = new MessageEmbed()
-            .setTitle(`Leaderboard Of ${message.guild.name}`)
+            .setTitle(`Leaderboard`)
             .setColor("BLACK")
             .setDescription(finalLb)
             .setFooter('@ Leaderboard / Economy')
