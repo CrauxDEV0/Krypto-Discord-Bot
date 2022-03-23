@@ -39,7 +39,7 @@ let Total = bal + bank
         .setDescription(
           `**${user.user.username}'s Balance**\n**<:wallet:927550750844940288> Wallet:** ${bal}/-\n**<:bank:927550933838217257> Bank:** ${bank}/-\n**<a:Money:927552113389756506> Total:** ${Total}/-`
         )
-        .setFooter(`<a:Money:927552113389756506>`)
+        .setFooter(`@ Economy/Balance`)
         .setTimestamp();
       message.channel.send({embeds:[moneyEmbed]});
     } else {
