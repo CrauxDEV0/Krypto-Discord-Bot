@@ -25,7 +25,7 @@ module.exports = {
         } else {
             let moneyEmbed = new MessageEmbed()
                 .setColor("BLACK")
-                .setDescription(`<a:tick:916884945555828806> You've **begged** and received ${amount} coins`);
+                .setDescription(`<a:Money:927552113389756506> You've **begged** and received ${amount} **Crypto Coins**!`);
             message.channel.send({embeds:[moneyEmbed]})
             db.add(`money_${user.id}`, amount)
             db.add(`begs_${user.id}`, 1)
