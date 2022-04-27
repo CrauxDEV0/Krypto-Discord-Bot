@@ -19,10 +19,11 @@ We are not going to add any type of `NSFW` features in it
 ### Commands List 💫 
 
 *   🤖 **ChatBot**: `set-channel` 
-*   👻 **Fun**: `ping`,`avatar`,`hack`,`sanitize`...
+*   😂 **Fun**: `ping`,`avatar`,`hack`,`sanitize`...
 *   🖨️ **Image**: `alert`
 *   ✉️ **Other**: `github`
 *   👑 **Owner**: `botservers`
+*   ⚒ **Moderation** :- `dm`
 
 ## Status 📥
 
