@@ -5,7 +5,7 @@
 
 > A Multipurpose Discord Bot with Chatbot, Moderations and Several useful commands!
 
-Crypto Discord Bot is a open source Discord bot coded in JavaScript with [Discord.js](https://discord.js.org) by [Craux](https://github.com/CrauxDEV0).  
+Krypto Discord Bot is a open source Discord bot coded in JavaScript with [Discord.js](https://discord.js.org) by [Craux](https://github.com/CrauxDEV0).  
 
 ## Command Categories 📑
 - [x] Fun
