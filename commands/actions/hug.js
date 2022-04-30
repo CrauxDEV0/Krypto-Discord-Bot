@@ -16,16 +16,18 @@ module.exports = {
      }
 
      var msg = [
-
+     `Hug me tightly`,
+     `<a:AnimeHug:968715028641488938> Dont be sad dear!`
      ]
      var gif = [
-
+     `https://tenor.com/view/hug-gif-24003809`,
+     `https://tenor.com/view/hug-cuddle-gif-23284815`,
      ]
     const embed2 = new MessageEmbed()
-    embed2.setTitle(msg[Math.floor(Math.random() * 2 )]) 
+    embed2.setTitle(msg[Math.floor(Math.random() * msg.length)]) 
     embed2.setDescription(`${message.member} hugged ${user} !`)
+    embed2.setImage(gif[Math.floor(Math.random() * gif.length)])
     embed2.setFooter('@ Action/Hug')
-    embed2.setImage(gif[Math.floor(Math.random() * 2)])
     embed2.setTimestamp()
     embed2.setColor("BLACK")
     
