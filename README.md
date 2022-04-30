@@ -1,5 +1,5 @@
 
-# Crypto Discord Bot ✨
+# Krypto Discord Bot ✨
 
 [![](https://img.shields.io/badge/discord.js-v13.6.0-blue.svg?logo=npm)](https://github.com/discordjs)
 
